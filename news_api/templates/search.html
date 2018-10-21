@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Search Results</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='stylesheet1.css') }}">
+</head>
+
+<body>
+<h1> Search Results</h1>
+{% for ele in content %}
+
+<span style="text-decoration:none;">URL:</span><a href="{{ele['articleUrl']}}">{{ele['headline']}}</a><br>
+<p>Author:{{ele['author']}}</p>
+<p>Article:{{ele['articleText']}}</p>
+{% endfor %}
+</body>
+
+</html>

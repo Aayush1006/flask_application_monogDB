@@ -1,0 +1,44 @@
+body{
+  background-color: #f5f5dc;
+
+}
+
+
+h1{ 
+  font-size:28px;
+  text-align:center; 
+  margin-top:85px; 
+}
+
+
+.align{
+  text-align: right;
+
+
+}
+
+button{
+display:block;
+position: absolute;
+top:90px;
+right:10px;
+}
+
+#searchText{
+position: absolute;
+top:50px;
+right:0px;
+text-align:left
+}
+
+#label{
+position: absolute;
+top:50px;
+right:200px;
+}
+
+span{
+
+text-decoration: none;
+
+}

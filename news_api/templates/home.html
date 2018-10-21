@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>News API</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='stylesheet1.css') }}">
+</head>
+
+<body>
+<div>
+<form method="post">
+<label class="align" id="label"><b>Enter the key word to search for article: </b></label>
+<input class="align" type="text" id="searchText" name="searchText"></input>
+<button class="align" id ="submit" name="search_button" value="search_button">Search</button>
+</div>
+
+<h1>The headlines</h1>
+<div>
+{% for ele in content %}
+
+<a href="{{ele['articleUrl']}}">{{ele['headline']}}</a><br>
+
+{% endfor %}
+</div>
+</form>
+</body>
+
+</html>
